@@ -1,0 +1,178 @@
+{
+    "generated_at": "2026-11-07T18:24:02.770+07:00",
+    "timezone": "Asia/Jakarta",
+    "summary": {
+        "total_ioc_checked": 1,
+        "malicious": 0,
+        "suspicious": 1,
+        "no_malicious_hit": 0,
+        "inconclusive": 0
+    },
+    "results": [
+        {
+            "ioc_type": "IP",
+            "hash_type": null,
+            "ioc": "92.119.157.100",
+            "checked_at": "2026-11-07T18:24:02.770+07:00",
+            "timezone": "Asia/Jakarta",
+            "overall_verdict": "SUSPICIOUS",
+            "verdict_reason": "At least one queried provider returned a suspicious verdict",
+            "provider_summary": {
+                "overall_verdict": "SUSPICIOUS",
+                "reason": "At least one queried provider returned a suspicious verdict",
+                "queried_providers": 7,
+                "error_providers": 2,
+                "skipped_providers": 0
+            },
+            "results": [
+                {
+                    "provider": "AbuseIPDB",
+                    "status": "OK",
+                    "message": "suspicious",
+                    "data": {
+                        "verdict": "suspicious",
+                        "abuse_confidence_score": 12,
+                        "total_reports": 2,
+                        "num_distinct_users": 2,
+                        "country_code": "US",
+                        "isp": "Wiredphase Cloud Technologies",
+                        "domain": "wiredphase.com",
+                        "usage_type": "Data Center/Web Hosting/Transit",
+                        "is_tor": false,
+                        "last_reported_at": "2026-10-29T08:13:01+00:00"
+                    },
+                    "requested_at": "2026-11-07T18:23:27.509+07:00",
+                    "completed_at": "2026-11-07T18:23:57.981+07:00",
+                    "duration_seconds": 30.472
+                },
+                {
+                    "provider": "VirusTotal",
+                    "status": "OK",
+                    "message": "clean",
+                    "data": {
+                        "verdict": "clean",
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 54,
+                        "undetected": 38,
+                        "reputation": 0,
+                        "last_analysis_date": 1792975669,
+                        "first_submission_date": null,
+                        "sha256": null,
+                        "sha1": null,
+                        "md5": null,
+                        "file_name": null,
+                        "file_type": null,
+                        "file_size": null
+                    },
+                    "requested_at": "2026-11-07T18:23:57.981+07:00",
+                    "completed_at": "2026-11-07T18:23:58.578+07:00",
+                    "duration_seconds": 0.597
+                },
+                {
+                    "provider": "HybridAnalysis",
+                    "status": "NO_HIT",
+                    "message": "No matching report returned by Hybrid Analysis",
+                    "data": {
+                        "total_results": 0,
+                        "lookup_method": "POST search terms (host)",
+                        "api_response": {
+                            "search_terms": [
+                                {
+                                    "id": "host",
+                                    "value": "92.119.157.100"
+                                }
+                            ],
+                            "count": 0,
+                            "result": []
+                        }
+                    },
+                    "requested_at": "2026-11-07T18:23:58.578+07:00",
+                    "completed_at": "2026-11-07T18:23:59.723+07:00",
+                    "duration_seconds": 1.145
+                },
+                {
+                    "provider": "IPinfo",
+                    "status": "OK",
+                    "message": "Enrichment available",
+                    "data": {
+                        "ip": "92.119.157.100",
+                        "hostname": null,
+                        "asn": "AS19318",
+                        "as_name": "Interserver, Inc",
+                        "as_domain": "interserver.net",
+                        "country_code": "US",
+                        "country": "United States",
+                        "continent_code": "NA",
+                        "continent": "North America",
+                        "city": null,
+                        "region": null,
+                        "org": null,
+                        "loc": null
+                    },
+                    "requested_at": "2026-11-07T18:23:59.724+07:00",
+                    "completed_at": "2026-11-07T18:24:00.047+07:00",
+                    "duration_seconds": 0.323
+                },
+                {
+                    "provider": "URLhaus",
+                    "status": "ERROR",
+                    "message": "HTTP 403: user_blacklisted",
+                    "data": {
+                        "http_status": 403,
+                        "response": {
+                            "query_status": "user_blacklisted"
+                        }
+                    },
+                    "requested_at": "2026-11-07T18:24:00.047+07:00",
+                    "completed_at": "2026-11-07T18:24:00.711+07:00",
+                    "duration_seconds": 0.664
+                },
+                {
+                    "provider": "Filescan.io",
+                    "status": "NO_HIT",
+                    "message": "API request succeeded but Filescan.io returned no recognized verdict",
+                    "data": {
+                        "ioc_value": "92.119.157.100",
+                        "overall_verdict": "no_threat",
+                        "mdcloud": {
+                            "scan_time": "2026-11-06T15:57:14.738000",
+                            "detected": 0
+                        },
+                        "ioc": "92.119.157.100",
+                        "ioc_type": "IP",
+                        "raw_verdict": "no_threat",
+                        "normalized_verdict": "unknown",
+                        "response": {
+                            "ioc_type": "ip",
+                            "ioc_value": "92.119.157.100",
+                            "overall_verdict": "no_threat",
+                            "mdcloud": {
+                                "scan_time": "2026-11-06T15:57:14.738000",
+                                "detected": 0
+                            },
+                            "filescan_reports": []
+                        }
+                    },
+                    "requested_at": "2026-11-07T18:24:00.711+07:00",
+                    "completed_at": "2026-11-07T18:24:02.463+07:00",
+                    "duration_seconds": 1.752
+                },
+                {
+                    "provider": "Shodan",
+                    "status": "ERROR",
+                    "message": "HTTP 403: Requires membership or higher to access",
+                    "data": {
+                        "http_status": 403,
+                        "response": {
+                            "error": "Requires membership or higher to access"
+                        }
+                    },
+                    "requested_at": "2026-11-07T18:24:02.463+07:00",
+                    "completed_at": "2026-11-07T18:24:02.770+07:00",
+                    "duration_seconds": 0.307
+                }
+            ]
+        }
+    ]
+}
